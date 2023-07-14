@@ -5,19 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+      body{
+  background-color: bisque;
+}
+header{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  font-size:30px;
+}
+.icons{
+  width: 30px;
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+    </style>
+
+
+
 </head>
 <body>
 
   <header>
-    <img src="" alt="woman with blond hair"/>
+    <video autoPlay muted loop>
+      <source src="bio_pictures/video.mp4" type="video/mp4"/>
+    </video>
+    <img src="/bio_pictures/me-modified.png" alt="woman with blond hair" width="150px"/>
     <h1>Alina Sapronova</h1>
   </header>
+
 <!-- Social media links -->
   <section class="socialMedia">
-    <a href="https://github.com/AlinaSapronova" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/alina-sapronova-a923b3246/" target="_blank">LinkedIn</a>
-    <a href="" target="_blank">Instagram</a>
+    <a href="https://github.com/AlinaSapronova" target="_blank"><img src="/bio_pictures/GitHub-Mark.png" alt="github icon" class="icons"/></a>
+    <a href="https://www.linkedin.com/in/alina-sapronova-a923b3246/" target="_blank"><img src="/bio_pictures/linkedin.png" alt="linkedin icon" class="icons"/></a>
+    <a href="https://www.instagram.com/sapronovaalinka/" target="_blank"><img src="/bio_pictures/instagram.jpeg" alt="instagram icon" class="icons"/></a>
   </section>
 
 <!-- Links -->
