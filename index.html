@@ -5,20 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
     <style>
-      body{
-  background-color: bisque;
-}
+
+body{
+  margin-top:40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+      }
+
 header{
   display:flex;
   flex-direction: column;
   align-items: center;
 }
+
 h1{
-  font-size:30px;
+  font-size:35px;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 3px;
 }
 .icons{
   width: 30px;
+  padding: 5px 30px;
 }
 video {
   object-fit: cover;
@@ -29,51 +42,93 @@ video {
   left: 0;
   z-index: -1;
 }
+.socialMedia{
+  display: flex;
+  justify-content: space-around;
+}
+
+.linksPicture{
+  width: 60px;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 640px;
+  flex-grow: 1;
+}
+
+.content {
+  background-color: #4A55A2;
+  display: flex;
+  align-items: center;
+  padding:5px 30px 5px 2px;
+  border-radius: 40px;
+  margin-top: 20px;
+  
+} 
+
+.content a {
+  color: #001e1d;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+  margin-left: 20px;
+  color:white;
+  letter-spacing: 3px;
+  font-family: 'Abril Fatface', cursive;
+} 
+
 
 
     </style>
-
-
-
 </head>
+
+
 <body>
 
   <header>
+    
     <video autoPlay muted loop>
       <source src="bio_pictures/video.mp4" type="video/mp4"/>
     </video>
+
     <img src="/bio_pictures/me-modified.png" alt="woman with blond hair" width="150px"/>
+
     <h1>Alina Sapronova</h1>
   </header>
 
+ 
+
 <!-- Social media links -->
   <section class="socialMedia">
-    <a href="https://github.com/AlinaSapronova" target="_blank"><img src="/bio_pictures/GitHub-Mark.png" alt="github icon" class="icons"/></a>
+    <a href="https://github.com/AlinaSapronova" target="_blank"><img src="/bio_pictures/icons8-github-60.png" alt="github icon" class="icons"/></a>
     <a href="https://www.linkedin.com/in/alina-sapronova-a923b3246/" target="_blank"><img src="/bio_pictures/linkedin.png" alt="linkedin icon" class="icons"/></a>
-    <a href="https://www.instagram.com/sapronovaalinka/" target="_blank"><img src="/bio_pictures/instagram.jpeg" alt="instagram icon" class="icons"/></a>
+    <a href="https://www.instagram.com/sapronovaalinka/" target="_blank"><img src="/bio_pictures/icons8-instagram-48.png" alt="instagram icon" class="icons"/></a>
   </section>
 
 <!-- Links -->
-  <section class="links">
+<section class="links">
 
-    <div>
-      <img src="" alt=""/>
+    <div class="content">
+      <img src="/bio_pictures/coctails-modified.png" alt="coctasils picture" class="linksPicture"/>
       <a href="https://spontaneous-crumble-14d19d.netlify.app" target="_blank">Try to find recipe of your favorite coctail</a>
     </div>
 
-    <div>
-      <img src="" alt=""/>
+    <div class="content">
+      <img src="/bio_pictures/Cakes-modified.png" alt="cake with flowers" class="linksPicture"/>
       <a href="https://verdant-swamp-iodine.glitch.me/index.html" target="_blank">Helthy and bautiful cakes and lollipops</a>
     </div>
 
-    <div>
-      <img src="" alt=""/>
+    <div class="content">
+      <img src="/bio_pictures/kids_games-modified.png" alt="kids are playing" class="linksPicture"/>
       <a href="https://fun-a-day.com/10-homemade-games-for-kids/" target="_blank">Homemade games for kids to play</a>
     </div>
 
-    <div>
-      <img src="" alt=""/>
-      <a href="" target="_blank"></a>
+    <div class="content">
+      <img src="/bio_pictures/belly-modified.png" alt="woman is doing xercise" class="linksPicture"/>
+      <a href="https://www.prevention.com/fitness/g20459708/best-workouts-to-target-belly-fat/" target="_blank">Exercises to Burn Belly Fat</a>
     </div>
 
   </section>
